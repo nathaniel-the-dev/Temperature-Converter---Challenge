@@ -11,7 +11,7 @@ Built with HTML/CSS/JS
 
 ![](./screenshot.png)
 
-[Demo]()
+[Check it out here](https://temperature-converter-challenge.vercel.app/)
 
 ## Installation
 
@@ -19,4 +19,4 @@ Clone the repository and open the index.html file.
 
 ## License
 
-Check the repository
+MIT
