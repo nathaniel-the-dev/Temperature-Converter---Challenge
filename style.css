@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap');
+
+:root {
+	font-family: 'Raleway', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+body {
+	background: hsl(210, 50%, 95%);
+
+	min-height: 100vh;
+
+	overflow: hidden;
+}
+
+header {
+	background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 25%);
+	box-shadow: 0 0.125rem 0.75rem hsla(0, 0%, 50%, 0.5);
+
+	padding: 1.5rem 3rem;
+}
+
+@media (max-width: 55rem) {
+	body {
+		text-align: center;
+
+		overflow: visible;
+	}
+
+	header {
+		padding: 1.5rem 0rem;
+	}
+}
+
+header h1 {
+	color: white;
+	font-size: 2.5rem;
+	font-weight: 900;
+	text-transform: uppercase;
+
+	letter-spacing: 0.125rem;
+	word-spacing: 0.5rem;
+}
+
+main {
+	padding: 5rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+@media (max-width: 55rem) {
+	main {
+		padding: 5rem 2.5rem;
+	}
+}
+
+h1.title {
+	font-size: 2rem;
+	font-weight: 300;
+
+	margin-bottom: 0.5rem;
+}
+
+/* Answer Section */
+.answer {
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+
+	min-height: 1rem;
+}
+
+/* Input Section */
+.form {
+	background: #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 1rem hsla(210, 50%, 75%, 0.5);
+
+	color: gray;
+
+	padding: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.form label {
+	font-size: 1.25em;
+}
+
+.form .inputs {
+	display: flex;
+
+	padding-top: 0.25rem;
+}
+
+.form :is(input, select) {
+	border: 1px solid hsla(0, 0%, 50%, 0.5);
+	border-radius: 0.125rem;
+	background: none;
+	outline: none;
+
+	color: inherit;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+
+	padding: 0.25rem 0.5rem;
+	margin: 0;
+}
+.form select {
+	cursor: pointer;
+}
+
+.form select[name='fromUnit'] {
+	margin-top: 0.5rem;
+}
+
+@media (min-width: 55rem) {
+	.form input[name='fromTemperature'] {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+
+		border-right: none;
+	}
+
+	.form select[name='fromUnit'] {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		margin: 0;
+	}
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	appearance: none;
+}
+
+.form button {
+	border: none;
+	border-radius: 0.25rem;
+	background: hsl(210, 100%, 65%);
+	outline: none;
+
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+
+	padding: 0.5rem;
+	margin-top: 1rem;
+
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+	background: hsl(210, 100%, 75%);
+	transform: translateY(-0.25rem);
+}
+
+/* Attribution */
+.attribution {
+	position: fixed;
+	bottom: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.attribution a {
+	color: blue;
+}
